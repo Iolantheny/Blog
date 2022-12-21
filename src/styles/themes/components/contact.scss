@@ -1,0 +1,56 @@
+.contact{
+    @include center();
+    text-align: center;
+
+    &__title{
+        font-size: pxToRem(45);
+        font-family: $f-Goldman;
+        margin-top: 5%;
+    }
+
+    &__hr{
+        border-color: $c-Java;
+        width: 40%;
+    }
+
+    &__calendar{
+        border: 0;
+        width: 60%;
+        height: 600px;
+        margin-top: 5%;
+    }
+
+    &__link{
+        text-decoration: none;
+        font-family: $f-Inter;
+        display: block;
+        margin: 5% auto;
+        color: $c-Black;
+        font-weight: bolder;
+        font-size: pxToRem(20);
+        border: 3px solid $c-Black;
+        border-radius: 20px;
+        padding: 2%;
+        width: 30%;
+        background-color: $c-Spray;
+        transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+        
+        &:hover{
+            box-shadow: inset 1000px 0 0 0 $c-Java;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .contact{
+        &__calendar{
+            width: 80%;
+            height: 400px;
+        } 
+
+        &__link{
+            width: 70%;
+            padding: 5%;
+        }
+    }
+}

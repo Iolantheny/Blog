@@ -1,0 +1,66 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\iolan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add gatsby-plugin-react-helmet react-helmet
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\iolan\AppData\Local\Microsoft\WindowsApps;C:\Users\iolan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\iolan\AppData\Roaming\npm;C:\Users\iolan\AppData\Local\Programs\MiKTeX\miktex\bin\x64\
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\iolan\Desktop\inne\FrontDevHero\project4\node_modules\@parcel\fs-search\fs-search.win32-x64-msvc.node'
+
+npm manifest: 
+  {
+    "name": "project4",
+    "version": "1.0.0",
+    "private": true,
+    "description": "project4",
+    "author": "Jolanta-J",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "gatsby": "^4.10.2",
+      "gatsby-plugin-google-analytics": "^4.10.0",
+      "gatsby-plugin-image": "^2.10.1",
+      "gatsby-plugin-manifest": "^4.10.2",
+      "gatsby-plugin-react-helmet": "^5.10.0",
+      "gatsby-plugin-sass": "^5.10.2",
+      "gatsby-plugin-sharp": "^4.10.2",
+      "gatsby-plugin-sitemap": "^5.10.2",
+      "gatsby-source-contentful": "^7.8.2",
+      "gatsby-source-filesystem": "^4.10.1",
+      "gatsby-transformer-sharp": "^4.10.0",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-helmet": "^6.1.0",
+      "sass": "^1.49.9"
+    },
+    "devDependencies": {
+      "@types/node": "^17.0.21",
+      "@types/react": "^17.0.41",
+      "@types/react-dom": "^17.0.14",
+      "typescript": "^4.6.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

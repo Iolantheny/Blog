@@ -1,0 +1,68 @@
+.home{
+    @include center();
+    text-align: center;
+    font-family: $f-Inter;
+
+    &__title{
+        font-size: pxToRem(45);
+        font-family: $f-Goldman;
+        margin-top: 5%;
+    }
+
+    &__hr{
+        border-color: $c-Java;
+        width: 40%;
+    }
+    
+    &__text{
+        font-size: pxToRem(20);
+        margin: 5% 10%;
+    }
+
+    &__last{
+        font-size: pxToRem(30);
+        font-family: $f-Goldman;
+        margin-top: 5%;
+    }
+
+    &__list{
+        list-style: none;
+        color: $c-Black;    
+        margin: 3% 0 0;
+        font-size: pxToRem(20);
+        font-weight: bold;
+        &--link{
+            text-decoration: none;
+            
+
+            &:before{
+                content: "\00BB";
+                vertical-align: top;
+                font-size: pxToRem(40);
+                margin: 1.5%;
+                color: $c-Java;  
+            }  
+
+            &:hover::before{
+                margin-right: 1%;
+            }
+        }
+
+        &--date{
+            margin: 0 0 2%;
+            font-size: pxToRem(18);
+            color: $c-Java;  
+        }
+
+        &--hr{
+            border-color: $c-Java;
+            width: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .home__text{
+        font-size: pxToRem(18);
+    }
+}

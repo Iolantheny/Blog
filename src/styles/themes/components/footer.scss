@@ -1,0 +1,65 @@
+%link{
+    color: $c-White;
+    text-decoration: none;
+    
+    &:hover{
+        color: $c-Java;
+    }
+}
+
+.footer{
+    @include myFlex();
+    @include FlexOptions(100%, wrap, row);
+    background-color: $c-Black;
+    margin-top: 5%;
+
+    &__title{
+        @include FlexOptions(100%);
+        margin-top: 3%;
+        text-align: center;
+        color: $c-White;
+        font-family: $f-SourceCodePro;
+
+        &--bracket{
+            color: $c-Java;
+            margin: 0;
+        }
+    }
+
+    &__list{
+        @include myFlex();
+        @include FlexOptions(100%, wrap);
+        @include center();
+        color: $c-White;
+        font-family: $f-Inter;
+
+        p{
+            margin: 2%;
+            cursor: pointer;
+            &:hover{
+                color: $c-Java;
+            }
+        }
+
+        &--link{
+            @extend %link;
+        }
+    }
+
+    &__media{
+        @include myFlex();
+        @include FlexOptions(100%);
+        @include center();
+        color: $c-White;
+        font-size: 150%;
+        color: $c-White;
+        margin-bottom: 2%;
+
+        &--link{
+            @extend %link;
+            margin: 2%;
+            @include FlexOptions(6%);
+        }
+    }
+}
+

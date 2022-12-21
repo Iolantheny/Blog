@@ -1,0 +1,70 @@
+.blogpost{
+    @include myFlex();
+    @include FlexOptions(100%, wrap);
+    margin: 5%;
+    text-decoration: none;
+    font-family: $f-Inter;
+
+    &__img{
+        @include FlexOptions(20%);
+        margin: 5%;
+        width: 30%;
+        height: 30%
+    }
+
+    &__text{
+        @include FlexOptions(50%);
+        margin: 3% 0;
+        color: $c-Black;
+
+        &--date{
+            color: $c-Black;
+            border-left: 2px $c-Java solid;
+            padding-left: 1%;
+            font-weight: bolder;
+        }
+
+        &--title{
+            color: $c-Java;
+            font-size: pxToRem(23);
+            font-weight: bolder;
+        }
+
+        &--arrow{
+            float: right;
+            color: $c-Java;
+            font-size: pxToRem(20);
+            border: 2px $c-Java solid;
+            padding: 3%;
+            
+            &:hover{
+                background-color: $c-Black;
+            }
+        }
+    }
+
+    &__hr{
+        border-color: $c-Java;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .blogpost{
+        &__img{
+            width: 60%;
+            margin: 2% auto;
+        }
+
+        &__text{
+            @include FlexOptions(80%);
+            margin: 2% auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .blogpost__text--title{
+        font-size: pxToRem(18);
+    }
+}

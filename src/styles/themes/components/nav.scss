@@ -1,0 +1,65 @@
+.navbar{
+    @include myFlex();
+    @include FlexOptions(70%);
+    margin: 3%;
+
+    &__nav{
+        @include myFlex();
+        color: $c-Black;
+        font-family: $f-Inter;
+        @include center();
+        font-size: pxToRem(25);
+        @include FlexOptions(50%);
+
+        &--link{
+            text-decoration: none;
+            margin: 2%;
+            padding: 2%;
+            @include FlexOptions(15%);
+        }
+    }
+
+    &__title{
+        @include FlexOptions(50%);
+        font-family: $f-SourceCodePro;
+        font-size: pxToRem(40);
+        margin-left: 5%;
+
+        &--bracket{
+            color: $c-Java;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .navbar__title{
+        font-size: pxToRem(30);
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .navbar{
+        @include FlexOptions(100%, wrap);
+
+        &__title{
+            @include FlexOptions(100%);
+        }
+
+        &__nav{
+            @include FlexOptions(100%);
+        }
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .navbar{
+        &__title{
+            font-size: pxToRem(28);
+        }  
+
+        &__nav{
+            font-size: pxToRem(20);
+        }
+    }
+}

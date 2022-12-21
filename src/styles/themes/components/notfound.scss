@@ -1,0 +1,33 @@
+.notfound{
+    display: grid;
+    @include center();
+    margin: 5%;
+
+    &__title{
+        font-family: $f-Goldman;
+        margin: 0 auto;
+    }
+
+    &__text{
+        display: block;
+    }
+
+    &__hr{
+        border-color: $c-Java;
+        width: 60%;
+    }
+
+    &__link{
+        text-decoration: none;
+        margin: 3%;
+        font-family: $f-Goldman;
+        text-align: center;
+        display: block;
+        font-size: pxToRem(25);
+        color: $c-Black;
+
+        &:hover{
+            color: $c-Java;
+        }
+    }
+}
